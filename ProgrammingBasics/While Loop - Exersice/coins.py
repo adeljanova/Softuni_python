@@ -1,0 +1,20 @@
+money = float(input())
+money = int(money * 100)
+coins_counter = 0
+coins_counter += money // 200
+money %= 200
+coins_counter += money // 100
+money %= 100
+coins_counter += money // 50
+money %= 50
+coins_counter += money // 20
+money %= 20
+coins_counter += money // 10
+money %= 10
+coins_counter += money // 5
+money %= 5
+coins_counter += money // 2
+money %= 2
+coins_counter += money // 1
+money %= 1
+print(coins_counter)
